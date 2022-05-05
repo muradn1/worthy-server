@@ -1,23 +1,21 @@
 import { ConfigModule } from '@nestjs/config';
 import { Test, TestingModule } from '@nestjs/testing';
 import { DiamondPriceEngine } from './diamond-price.engine';
-import { DiamondsResolver } from './diamonds.resolver';
-import { DiamondsService } from './diamonds.service';
 import { DiamondsUtils } from './diamonds.utils';
 
-describe('DiamondsResolver', () => {
-  let resolver: DiamondsResolver;
+describe('DiamondsPriceEngine', () => {
+  let engine: DiamondPriceEngine;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [DiamondsResolver, DiamondPriceEngine, DiamondsService, DiamondsUtils],
+      providers: [DiamondPriceEngine, DiamondsUtils],
       imports:[ConfigModule]
     }).compile();
 
-    resolver = module.get<DiamondsResolver>(DiamondsResolver);
+    engine = module.get<DiamondPriceEngine>(DiamondPriceEngine);
   });
 
   it('should be defined', () => {
-    expect(resolver).toBeDefined();
+    expect(engine).toBeDefined();
   });
 });
