@@ -1,11 +1,11 @@
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { Test, TestingModule } from '@nestjs/testing';
 import { DiamondPriceEngine } from './diamond-price.engine';
-import { DiamondsUtils } from './diamonds.utils';
-import { DiamondClarity } from './models/diamond-clarity.enum';
-import { DiamondColor } from './models/diamond-color.enum';
-import { DiamondCut } from './models/diamond-cut.enum';
-import { DiamondInput } from './models/diamond.input';
+import { DiamondsUtils } from '../shared/diamonds.utils';
+import { DiamondClarity } from '../diamonds/models/diamond-clarity.enum';
+import { DiamondColor } from '../diamonds/models/diamond-color.enum';
+import { DiamondCut } from '../diamonds/models/diamond-cut.enum';
+import { DiamondInput } from '../diamonds/models/diamond.input';
 
 const MOCK_PRICE_ENGINE_CONFIG = {
     caratPrice: 100,

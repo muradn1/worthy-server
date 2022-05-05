@@ -23,6 +23,29 @@ export default () => ({
       ASSCHER: parseFloat(process.env.CUT_ASSCHER_FIXED_COST) || 200,
       OVAL: parseFloat(process.env.CUT_OVA_FIXED_COST) || 150,
     }
+  },
+
+  similarEngine: {
+    weightFactor: 0.01,
+    colorFactor: 0.4,
+    clarityFactor: 0.5,
+    cutFactor: 0.3,
+    cutDistance: {
+      ROUND: 1,
+      PRINCESS: 0.8,
+      EMERALD: 0.6,
+      ASSCHER: 0.4,
+      OVAL: 0.2
+    },
+    clarityDistance: {
+      FL: 1,
+      IF: 0.8,
+      VVS: 0.6,
+      VS: 0.5,
+      SI: 0.3,
+      I1: 0.1,
+      I2: 0.05
+    }
   }
 });
 
@@ -39,11 +62,34 @@ export interface PriceEngineConfig {
     I1: number,
     I2: number
   },
-  cutFixedCost:{
+  cutFixedCost: {
     ROUND: number
     PRINCESS: number,
     EMERALD: number,
     ASSCHER: number,
     OVAL: number
   }
+}
+
+export interface SimilarEngineConfig {
+  weightFactor: number,
+  colorFactor: number,
+  clarityFactor: number,
+  cutFactor: number,
+  cutDistance: {
+    ROUND: number
+    PRINCESS: number,
+    EMERALD: number,
+    ASSCHER: number,
+    OVAL: number
+  },
+  clarityDistance: {
+    FL: number,
+    IF: number,
+    VVS: number,
+    VS: number,
+    SI: number,
+    I1: number,
+    I2: number
+  },
 }
