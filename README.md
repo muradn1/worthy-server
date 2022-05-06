@@ -1,14 +1,14 @@
 this is a Graphql server.
-relevat queries and mutations:
+relevant queries and mutations:
 
-mutataion calcDiamondPrice(price,cut,clarity,caratWeight)
-  * creates and saves diamond with these params to DB (inMemory array)
-  * estimate diamond price according to these characteristics
-  * return the new diamond's characteristics (espacially its generated id) with the estimated price
+* mutataion calcDiamondPrice(price,cut,clarity,caratWeight)
+  - creates and saves diamond with these params to DB (inMemory array)
+  - estimate diamond price according to these characteristics
+  - return the new diamond's characteristics (espacially its generated id)  with the estimated price
 
 
-query findSimilarDiamonds(diamondId,limit?)
--- find up to {limit} (by default = 4) similar diamonds based on its characteristics
+* query findSimilarDiamonds(diamondId,limit?)
+ - find up to {limit} (by default = 4) similar diamonds based on its characteristics
 
 each operation has an engine that estimates the result based on corsponding config
 
