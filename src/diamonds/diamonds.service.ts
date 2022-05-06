@@ -18,7 +18,7 @@ export class DiamondsService {
             color: DiamondColor.WHITE,
             clarity: DiamondClarity.FL,
             price: 2045,
-            photo: null
+            photo: "first-image.jpg"
         },
         {
             id: "03f26005-fccc-425c-b47a-7175810401ce",
@@ -28,7 +28,7 @@ export class DiamondsService {
             color: DiamondColor.RED,
             clarity: DiamondClarity.FL,
             price: 2817.5,
-            photo: null
+            photo: "fifth-image.jpg"
         },
         {
             id: "b2e53569-bb9c-425d-b68f-f3053e7ec33d",
@@ -38,7 +38,7 @@ export class DiamondsService {
             color: DiamondColor.RED,
             clarity: DiamondClarity.FL,
             price: 2210,
-            photo: null
+            photo: "forth-diamond.jpg"
         },
         {
             id: "4f16c8f8-43ba-4a6c-aa2e-e9914b2495ef",
@@ -48,7 +48,7 @@ export class DiamondsService {
             color: DiamondColor.RED,
             clarity: DiamondClarity.VVS,
             price: 2096,
-            photo: null
+            photo: "second-image.jpg"
         },
         {
             id: "6ec41f42-a315-4200-aaa6-8094f49cb50c",
@@ -58,7 +58,7 @@ export class DiamondsService {
             color: DiamondColor.BLUE,
             clarity: DiamondClarity.I1,
             price: 865.0000000000001,
-            photo: null
+            photo: "sixth-image.jpg"
         },
         {
             id: "47f4488d-3ef4-4bd7-9c16-e0bce5d3fc37",
@@ -68,7 +68,7 @@ export class DiamondsService {
             color: DiamondColor.BLUE,
             clarity: DiamondClarity.I1,
             price: 1015.0000000000001,
-            photo: null
+            photo: "third-diamond.jpg"
         },
 
     ];
