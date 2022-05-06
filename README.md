@@ -2,9 +2,9 @@ this is a Graphql server.
 relevat queries and mutations:
 
 mutataion calcDiamondPrice(price,cut,clarity,caratWeight)
--- creates and saves diamond with these params to DB (inMemory array)
--- estimate diamond price according to these characteristics
--- return the new diamond's characteristics (espacially its generated id) with the estimated price
+  * creates and saves diamond with these params to DB (inMemory array)
+  * estimate diamond price according to these characteristics
+  * return the new diamond's characteristics (espacially its generated id) with the estimated price
 
 
 query findSimilarDiamonds(diamondId,limit?)
