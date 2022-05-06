@@ -8,7 +8,7 @@ relevant queries and mutations:
 
 
 * query findSimilarDiamonds(diamondId,limit?)
- - find up to {limit} (by default = 4) similar diamonds based on its characteristics
+  - find up to {limit} (by default = 4) similar diamonds based on its characteristics
 
 each operation has an engine that estimates the result based on corsponding config
 
