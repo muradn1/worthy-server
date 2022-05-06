@@ -1,7 +1,7 @@
 export enum DiamondColor{
-    RED,
-    GREY,
-    WHITE,
-    BLUE,
-    YELLOW,
+    RED="RED",
+    GREY="GREY",
+    WHITE="WHITE",
+    BLUE="BLUE",
+    YELLOW="YELLOW",
 }
